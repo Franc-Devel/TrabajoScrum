@@ -4,23 +4,69 @@
     --dark-purple: #1E1E3F;
     --soft-violet: #A389F4;
     --vibrant-violet: #D18BFF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0D1;
     --transition: all 0.3s ease;
 }
 body {
     background-color: var(--deep-navy);
-    color: #ffffff;
+    color: var(--text-primary);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
-h2 {
+h1, h2, h3, .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar {
+    background-color: rgba(11, 14, 34, 0.95);
+    border-bottom: 1px solid rgba(163, 137, 244, 0.2);
+    padding: 15px 0;
+}
+.nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    transition: var(--transition);
+    margin: 0 10px;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--vibrant-violet) !important;
+}
+.banner-mint {
+    background: linear-gradient(90deg, #1e1e3f 0%, #3a1e5f 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(209, 139, 255, 0.3);
+    transition: var(--transition);
+    min-height: 450px;
+}
+.carousel-item img {
+    max-height: 350px;
+    object-fit: cover;
+}
+.text-vibrant {
+    color: var(--vibrant-violet);
+    text-shadow: 0 0 15px rgba(209, 139, 255, 0.5);
+}
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--soft-violet) !important;
+    opacity: 0.5;
+}
+.carousel-indicators .active {
+    opacity: 1 !important;
+    background-color: var(--vibrant-violet) !important;
+    box-shadow: 0 0 10px var(--vibrant-violet);
 }
 .banner-mint-profesional {
     width: 100%;
-    min-height: 320px;
+    min-height: 250px;
     border-radius: 24px;
-    border: 1px solid rgba(163, 137, 244, 0.4);
-    background-color: #0B0E22; 
+    border: 1px solid rgba(163, 137, 244, 0.3);
+    background-color: var(--dark-purple); 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -33,53 +79,68 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/banner.png'); 
+    background-image: url('../assets/img/banner.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
-    opacity: 0.25; 
-    filter: blur(3px); 
-    transition: var(--transition);
+    opacity: 0.8;
+    transition: transform 0.5s ease;
 }
 .banner-content {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
+    height: 100%;
     width: 100%;
 }
 .badge-mint {
-    background: rgba(163, 137, 244, 0.15);
+    background: rgba(0, 0, 0, 0.5);
     border: 1px solid var(--soft-violet);
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    backdrop-filter: blur(10px);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
     display: inline-block;
 }
-.text-vibrant {
-    color: var(--vibrant-violet);
-    text-shadow: 0 0 15px rgba(209, 139, 255, 0.5);
+.banner-mint-profesional:hover .banner-bg-image {
+    transform: scale(1.05);
 }
-.banner-content h2 {
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+.banner-mint-profesional:hover {
+    box-shadow: 0 0 30px rgba(163, 137, 244, 0.3);
 }
 .btn-primary-cyber {
     background-color: var(--soft-violet);
     border: none;
     color: white;
     font-weight: 700;
-    padding: 14px 35px;
+    padding: 12px 30px;
     border-radius: 12px;
     text-transform: uppercase;
+    font-size: 0.9rem;
     transition: var(--transition);
 }
 .btn-primary-cyber:hover {
     background-color: var(--vibrant-violet);
     transform: translateY(-3px);
-    box-shadow: 0 0 25px rgba(209, 139, 255, 0.6);
+    box-shadow: 0 0 25px rgba(209, 139, 255, 0.5);
+    color: white;
 }
-.banner-mint-profesional:hover .banner-bg-image {
-    transform: scale(1.08);
-    opacity: 0.35;
+.card-nft {
+    background-color: var(--dark-purple);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    transition: var(--transition);
+}
+.card-nft:hover {
+    border-color: var(--vibrant-violet);
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 991px) {
+    .display-3 { font-size: 2.5rem; }
+    .display-4 { font-size: 2rem; }
+    .banner-mint { min-height: auto; padding: 2rem 1rem; }
 }
