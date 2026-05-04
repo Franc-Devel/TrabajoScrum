@@ -1,110 +1,1184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolling NFT | Banner Profesional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-dark"> 
-    <nav class="navbar navbar-expand-lg sticky-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="rolling nft, nft, digital art, gaming" />
+    <meta
+      name="description"
+      content="Pagina Web de Rolling NFT hecha por Francisco Delgado, Nicolas Brizuela y Franco Cerviño"
+    />
+    <meta
+      name="Author"
+      content="Francisco Delgado, Nicolas Brizuela y Franco Cerviño"
+    />
+    <title>Rolling NFT | Landing Page Completa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <!-- HEADER PRINCIPAL -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <i class="bi bi-paw-fill text-primary"></i> ROLLING NFT
+          <a class="navbar-brand text-white d-flex align-items-center" href="#">
+            <img
+              src="./assets/img/logo_rolling_nft.png"
+              alt="Logo Rolling NFT"
+              style="height: 4rem; width: auto"
+              class="me-2"
+            />
+            ROLLING NFT
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/collections.html"
+                  >Colección</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/proyect.html"
+                  >Sobre el proyecto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contacto</a>
+              </li>
+            </ul>
+            <a
+              href="./pages/error404.html"
+              class="btn btn-outline-cyber btn-sm"
+            >
+              Conectar Wallet
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Colección</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre el proyecto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                </ul>
-                <button class="btn btn-outline-cyber btn-sm">Conectar Wallet</button>
-            </div>
+          </div>
         </div>
-    </nav>
-<header id="headerCarousel" class="carousel slide container mt-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner rounded-4 border border-secondary shadow-lg">
-                <div class="carousel-item active">
+      </nav>
+      <!-- CAROUSEL (Convertido a div para mantener semántica) -->
+      <div
+        id="headerCarousel"
+        class="carousel slide container mt-4"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#headerCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#headerCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#headerCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div
+          class="carousel-inner rounded-4 border border-secondary shadow-lg border-opacity-25"
+        >
+          <!-- ITEM 1 -->
+          <div class="carousel-item active">
             <div class="banner-mint p-5 d-flex align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 px-lg-5">
-                        <h1 class="display-3 fw-bold mb-3">ÚNICOS. DIGITALES. <br><span class="text-vibrant">IRREPETIBLES.</span></h1>
-                        <p class="text-secondary mb-4">Rolling NFT es una colección de 3,333 NFTs únicos inspirados en la cultura gamer y la vida digital.</p>
-                        <button class="btn btn-primary-cyber btn-lg">Explorar colección</button>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <img src="./assets/img/dog.jpg" class="img-fluid rounded-4 shadow-lg" alt="Code Master Bull Terrier">
-                    </div>
+              <div class="row align-items-center">
+                <div class="col-lg-6 px-lg-5">
+                  <h1 class="display-4 fw-bold mb-3">
+                    ÚNICOS. DIGITALES. <br /><span class="text-vibrant"
+                      >IRREPETIBLES.</span
+                    >
+                  </h1>
+                  <p class="text-secondary mb-4">
+                    Rolling NFT es una colección de 3,333 NFTs únicos inspirados
+                    en la cultura gamer y la vida digital.
+                  </p>
+                  <a
+                    href="./pages/collections.html"
+                    class="btn btn-primary-cyber btn-lg"
+                  >
+                    Explorar colección
+                  </a>
                 </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="banner-mint p-5 d-flex align-items-center" style="background: linear-gradient(90deg, #101223 0%, #1e1e3f 100%);">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 px-lg-5">
-                        <h1 class="display-3 fw-bold mb-3">ARTE. CÓDIGO. <br><span class="text-vibrant">COMUNIDAD.</span></h1>
-                        <p class="text-secondary mb-4">Descansando después de una larga sesión de código. Unete a la comunidad más grande de programadores.</p>
-                        <button class="btn btn-primary-cyber btn-lg">Unirse al Discord</button>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <img src="./assets/img/cat.jpg" class="img-fluid rounded-4 shadow-lg" alt="Chill Coder Cat">
-                    </div>
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                  <img
+                    src="./assets/img/dog.jpg"
+                    class="img-fluid rounded-4 shadow-lg"
+                    alt="Code Master Bull Terrier"
+                  />
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="banner-mint p-5 d-flex align-items-center" style="background: linear-gradient(90deg, #1e1e3f 0%, #0B0E22 100%);">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 px-lg-5">
-                        <h1 class="display-3 fw-bold mb-3">EL FUTURO <br><span class="text-vibrant">ES AHORA.</span></h1>
-                        <p class="text-secondary mb-4">Pequeño pero poderoso, en constante evolución. Asegura tu lugar en el Metaverso de Rolling NFT.</p>
-                        <button class="btn btn-primary-cyber btn-lg">Ver en OpenSea</button>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <img src="./assets/img/dinosaur.jpg" class="img-fluid rounded-4 shadow-lg" alt="Byte Dino">
-                    </div>
+          </div>
+          <!-- ITEM 2 -->
+          <div class="carousel-item">
+            <div
+              class="banner-mint p-5 d-flex align-items-center"
+              style="
+                background: linear-gradient(90deg, #101223 0%, #1e1e3f 100%);
+              "
+            >
+              <div class="row align-items-center">
+                <div class="col-lg-6 px-lg-5">
+                  <h1 class="display-4 fw-bold mb-3">
+                    ARTE. CÓDIGO. <br /><span class="text-vibrant"
+                      >COMUNIDAD.</span
+                    >
+                  </h1>
+                  <p class="text-secondary mb-4">
+                    Descansando después de una larga sesión de código. Únete a
+                    la comunidad más grande de programadores.
+                  </p>
+                  <a
+                    href="./pages/contact.html"
+                    class="btn btn-primary-cyber btn-lg"
+                  >
+                    Unirse a Discord
+                  </a>
                 </div>
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                  <img
+                    src="./assets/img/cat.jpg"
+                    class="img-fluid rounded-4 shadow-lg"
+                    alt="Chill Coder Cat"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- ITEM 3 -->
+          <div class="carousel-item">
+            <div
+              class="banner-mint p-5 d-flex align-items-center"
+              style="
+                background: linear-gradient(90deg, #1e1e3f 0%, #0b0e22 100%);
+              "
+            >
+              <div class="row align-items-center">
+                <div class="col-lg-6 px-lg-5">
+                  <h1 class="display-4 fw-bold mb-3">
+                    EL FUTURO <br /><span class="text-vibrant">ES AHORA.</span>
+                  </h1>
+                  <p class="text-secondary mb-4">
+                    Pequeño pero poderoso, en constante evolución. Asegura tu
+                    lugar en el Metaverso de Rolling NFT.
+                  </p>
+                  <a
+                    href="./pages/error404.html"
+                    class="btn btn-primary-cyber btn-lg"
+                  >
+                    Ver en OpenSea
+                  </a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                  <img
+                    src="./assets/img/dinosaur.jpg"
+                    class="img-fluid rounded-4 shadow-lg"
+                    alt="Byte Dino"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
-    </button>
-</header>
-    <section class="container mt-5 d-none d-lg-block">
-        <div class="banner-mint-profesional position-relative overflow-hidden">
-            
-            <div class="banner-bg-image"></div>            
-            <div class="banner-content d-flex flex-column align-items-center justify-content-center text-center p-5">
-                <span class="badge-mint mb-3">
-                    <i class="bi bi-fire me-1"></i> MINT DISPONIBLE AHORA
-                </span>                
-                <h2 class="display-4 fw-bold mb-2">
-                    Únete a la comunidad <span class="text-vibrant">Rolling NFT</span>
-                </h2>                
-                <p class="text-secondary mb-4 opacity-75">
-                    Mint abierto por tiempo limitado. ¡No te quedes fuera!
-                </p>                
-                <button class="btn btn-primary-cyber px-5">
-                    Mint ahora <i class="bi bi-send-fill ms-2"></i>
-                </button>
-            </div>            
+        <!-- CONTROLES -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#headerCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#headerCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle p-3"
+          ></span>
+        </button>
+      </div>
+    </header>
+    <!-- SECCIÓN COLECCIÓN (NUEVA) -->
+    <section id="coleccion" class="container mt-5 pt-5">
+      <div class="text-center mb-5">
+        <p
+          class="text-subtitle fw-bold mb-1"
+          style="
+            color: var(--soft-violet);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+          "
+        >
+          COLECCIÓN
+        </p>
+        <h2 class="display-5 fw-bold text-white mb-3">Nuestros NFTs</h2>
+        <p class="text-secondary">Cada pieza es única. No hay dos iguales.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+          <div class="card-nft d-flex flex-column">
+            <img
+              src="./assets/img/dog.jpg"
+              alt="Code Master"
+              class="img-fluid rounded-4 mb-3"
+            />
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h4 class="text-white fw-bold mb-0">Code Master</h4>
+              <span class="badge-id">#001</span>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Siempre concentrado, creando en el mundo digital.
+            </p>
+            <div class="d-flex align-items-center mb-3 text-white fw-bold">
+              <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.08 ETH
+            </div>
+            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
+            <button
+              type="button"
+              class="btn btn-primary-cyber w-100 py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCompra1"
+            >
+              COMPRAR AHORA
+            </button>
+          </div>
         </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+          <div class="card-nft d-flex flex-column">
+            <img
+              src="./assets/img/cat.jpg"
+              alt="Chill Coder"
+              class="img-fluid rounded-4 mb-3"
+            />
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h4 class="text-white fw-bold mb-0">Chill Coder</h4>
+              <span class="badge-id">#002</span>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Descansando después de una larga sesión de código.
+            </p>
+            <div class="d-flex align-items-center mb-3 text-white fw-bold">
+              <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.07 ETH
+            </div>
+            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
+            <button
+              type="button"
+              class="btn btn-primary-cyber w-100 py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCompra2"
+            >
+              COMPRAR AHORA
+            </button>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card-nft d-flex flex-column">
+            <img
+              src="./assets/img/dinosaur.jpg"
+              alt="Byte Dino"
+              class="img-fluid rounded-4 mb-3"
+            />
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h4 class="text-white fw-bold mb-0">Byte Dino</h4>
+              <span class="badge-id">#003</span>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Pequeño pero poderoso, en constante evolución.
+            </p>
+            <div class="d-flex align-items-center mb-3 text-white fw-bold">
+              <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.09 ETH
+            </div>
+            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
+            <button
+              type="button"
+              class="btn btn-primary-cyber w-100 py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCompra3"
+            >
+              COMPRAR AHORA
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- SECCIÓN FORO COMUNITARIO -->
+    <section class="container mt-5 pt-4 pb-4">
+      <div class="forum-container p-4 rounded-4 position-relative">
+        <!-- Encabezado del Foro -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 pb-2"
+        >
+          <div
+            class="d-flex align-items-center text-secondary fw-bold"
+            style="font-size: 0.95rem; letter-spacing: 0.5px"
+          >
+            <i
+              class="bi bi-chat-left-fill fs-5 me-2"
+              style="color: var(--soft-violet)"
+            ></i>
+            <span style="color: var(--soft-violet)">FORO COMUNITARIO</span>
+            <span class="mx-2">-</span>
+            <span class="text-white">ÚLTIMOS COMENTARIOS</span>
+          </div>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-secondary forum-icon"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="#" class="text-secondary forum-icon"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-secondary forum-icon"
+              ><i class="bi bi-discord"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Lista de Comentarios -->
+        <div class="comments-list mb-4">
+          <!-- Comentario 1 -->
+          <div
+            class="d-flex align-items-md-center align-items-start mb-3 flex-column flex-md-row"
+          >
+            <div class="d-flex flex-grow-1 align-items-center mb-2 mb-md-0">
+              <img
+                src="./assets/img/cat.jpg"
+                alt="Avatar CryptoKat"
+                class="rounded-circle me-3 border border-secondary"
+                style="width: 35px; height: 35px; object-fit: cover"
+              />
+              <div class="text-secondary" style="font-size: 0.95rem">
+                <span class="text-white"
+                  >De <span style="color: var(--soft-violet)">@rev</span>:</span
+                >
+                "¡Acabo de comprar el #002! Qué genial."
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center text-secondary justify-content-end"
+              style="font-size: 0.85rem; min-width: 140px"
+            >
+              <span class="me-3">2 mins ago</span>
+              <i class="bi bi-hand-thumbs-up-fill me-1"></i> 12
+            </div>
+          </div>
+          <!-- Comentario 2 -->
+          <div
+            class="d-flex align-items-md-center align-items-start mb-3 flex-column flex-md-row"
+          >
+            <div class="d-flex flex-grow-1 align-items-center mb-2 mb-md-0">
+              <img
+                src="./assets/img/dog.jpg"
+                alt="Avatar RollingRex"
+                class="rounded-circle me-3 border border-secondary"
+                style="width: 35px; height: 35px; object-fit: cover"
+              />
+              <div class="text-secondary" style="font-size: 0.95rem">
+                <span class="text-white"
+                  >De
+                  <span style="color: var(--soft-violet)">@frannrex</span
+                  >:</span
+                >
+                "¡Miren que copado! No puedo esperar al próximo lanzamiento."
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center text-secondary justify-content-end"
+              style="font-size: 0.85rem; min-width: 140px"
+            >
+              <span class="me-3">15 mins ago</span>
+              <i class="bi bi-heart-fill me-1"></i> 8
+            </div>
+          </div>
+          <!-- Comentario 3 -->
+          <div
+            class="d-flex align-items-md-center align-items-start mb-4 flex-column flex-md-row"
+          >
+            <div class="d-flex flex-grow-1 align-items-center mb-2 mb-md-0">
+              <img
+                src="./assets/img/dinosaur.jpg"
+                alt="Avatar DevDan"
+                class="rounded-circle me-3 border border-secondary"
+                style="width: 35px; height: 35px; object-fit: cover"
+              />
+              <div class="text-secondary" style="font-size: 0.95rem">
+                <span class="text-white"
+                  >De
+                  <span style="color: var(--soft-violet)">@Devfranc</span
+                  >:</span
+                >
+                "Me encanta el tema de programador. El codigo #001 es una obra
+                maestra."
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center text-secondary justify-content-end"
+              style="font-size: 0.85rem; min-width: 140px"
+            >
+              <span class="me-3">1 hour ago</span>
+              <i class="bi bi-heart-fill me-1"></i> 24
+            </div>
+          </div>
+        </div>
+        <!-- Área de Ingreso de Texto -->
+        <div class="d-flex align-items-center mb-3 gap-2">
+          <span class="text-white" style="font-size: 0.9rem"
+            >Comentar como:</span
+          >
+          <input
+            type="text"
+            class="form-control form-control-cyber form-control-sm"
+            placeholder="Tu nombre de usuario"
+            style="max-width: 250px"
+          />
+        </div>
+        <div
+          class="d-flex align-items-md-center align-items-stretch gap-3 flex-column flex-md-row"
+        >
+          <a
+            href="#contacto"
+            class="text-decoration-none"
+            style="
+              color: var(--soft-violet);
+              font-size: 0.9rem;
+              white-space: nowrap;
+            "
+            >@Hablemos</a
+          >
+          <input
+            type="text"
+            class="form-control form-control-cyber flex-grow-1"
+            placeholder="Escribe un mensaje..."
+          />
+          <button
+            type="button"
+            class="btn btn-primary-cyber fw-bold"
+            style="white-space: nowrap; font-size: 0.85rem; padding: 10px 25px"
+            data-bs-toggle="modal"
+            data-bs-target="#modalComentario"
+          >
+            PUBLICAR COMENTARIO
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- BANNER MINT PROFESIONAL -->
+    <section class="container mt-5 pt-5 d-none d-lg-block">
+      <div class="banner-mint-profesional position-relative overflow-hidden">
+        <div class="banner-bg-image"></div>
+        <div
+          class="banner-content d-flex flex-column align-items-center justify-content-center text-center p-5"
+        >
+          <span class="badge-mint mb-3">
+            <i class="bi bi-fire me-1"></i> DISCORD DISPONIBLE AHORA
+          </span>
+          <h2 class="display-4 fw-bold mb-2">
+            Únete a la comunidad <span class="text-vibrant">Rolling NFT</span>
+          </h2>
+          <p class="text-secondary mb-4 opacity-75">
+            Discord abierto para toda nuestra comunidad. ¡No te quedes fuera!
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary-cyber btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalUnirse"
+          >
+            Únete ahora
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="container mt-5 pt-4 pb-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <p
+            class="text-subtitle fw-bold mb-1"
+            style="
+              color: var(--soft-violet);
+              font-size: 0.85rem;
+              letter-spacing: 2px;
+            "
+          >
+            CONTACTO
+          </p>
+          <h2 class="display-5 fw-bold text-white mb-3">Hablemos</h2>
+          <p class="text-secondary mb-4">
+            ¿Tenés dudas o querés colaborar con el proyecto? Escribinos y te
+            responderemos lo antes posible.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="./pages/contact.html" class="social-icon"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="./pages/contact.html" class="social-icon"
+              ><i class="bi bi-discord"></i
+            ></a>
+            <a href="./pages/contact.html" class="social-icon"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="./pages/contact.html" class="social-icon"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form
+            class="p-4 rounded-4"
+            style="
+              background-color: var(--dark-purple);
+              border: 1px solid rgba(255, 255, 255, 0.05);
+            "
+          >
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control form-control-cyber"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control form-control-cyber"
+                  placeholder="Tu correo"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <textarea
+                class="form-control form-control-cyber"
+                rows="4"
+                placeholder="Tu mensaje"
+              ></textarea>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary-cyber w-100 py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#modalContacto"
+            >
+              Enviar mensaje <i class="bi bi-send-fill ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- MODAL CYBERPUNK -->
+      <div
+        class="modal fade"
+        id="modalContacto"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="modalContactoLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <!-- Centrado verticalmente -->
+          <div
+            class="modal-content"
+            style="
+              background-color: var(--dark-purple);
+              border: 1px solid var(--soft-violet);
+              box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+            "
+          >
+            <div class="modal-header border-bottom-0 pb-0">
+              <h1
+                class="modal-title fs-5 text-white fw-bold"
+                id="modalContactoLabel"
+              >
+                <i
+                  class="bi bi-check-circle-fill me-2"
+                  style="color: var(--vibrant-violet)"
+                ></i
+                >Mensaje Enviado
+              </h1>
+              <!-- Botón "X" configurado en blanco -->
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-secondary mt-2">
+              Gracias por comunicarte con nosotros. Hemos recibido tu mensaje,
+              nuestro equipo se pondrá en contacto a la brevedad.
+            </div>
+            <div class="modal-footer border-top-0 pt-0">
+              <!-- Botón primario (Accept) -->
+              <button
+                type="button"
+                class="btn btn-primary-cyber px-4"
+                data-bs-dismiss="modal"
+              >
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL COMPRA 1 (Code Master - 0.08 ETH) -->
+    <div
+      class="modal fade"
+      id="modalCompra1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalCompra1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0 mt-2">
+            <h1
+              class="modal-title fs-4 text-white fw-bold"
+              id="modalCompra1Label"
+            >
+              <i
+                class="bi bi-wallet2 me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >Comprar Code Master
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary small mb-4">
+              Ingresa los datos de tu wallet para procesar la transacción en la
+              blockchain.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Dirección de Wallet (ETH)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej: 0x71C...976F"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Cantidad de NFTs</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  value="1"
+                  min="1"
+                  max="5"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 p-3 rounded-3"
+                style="
+                  background-color: rgba(0, 0, 0, 0.3);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                "
+              >
+                <span class="text-secondary fw-bold">Total a pagar:</span>
+                <!-- Precio Fijo del Modal 1 -->
+                <span class="text-white fw-bold fs-5"
+                  ><i
+                    class="bi bi-gem me-2"
+                    style="color: var(--soft-violet)"
+                  ></i
+                  >0.08 ETH</span
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary-cyber w-100 py-3"
+                data-bs-dismiss="modal"
+              >
+                CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL COMPRA 2 (Chill Coder - 0.07 ETH) -->
+    <div
+      class="modal fade"
+      id="modalCompra2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalCompra2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0 mt-2">
+            <h1
+              class="modal-title fs-4 text-white fw-bold"
+              id="modalCompra2Label"
+            >
+              <i
+                class="bi bi-wallet2 me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >Comprar Chill Coder
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary small mb-4">
+              Ingresa los datos de tu wallet para procesar la transacción en la
+              blockchain.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Dirección de Wallet (ETH)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej: 0x71C...976F"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Cantidad de NFTs</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  value="1"
+                  min="1"
+                  max="5"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 p-3 rounded-3"
+                style="
+                  background-color: rgba(0, 0, 0, 0.3);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                "
+              >
+                <span class="text-secondary fw-bold">Total a pagar:</span>
+                <!-- Precio Fijo del Modal 2 -->
+                <span class="text-white fw-bold fs-5"
+                  ><i
+                    class="bi bi-gem me-2"
+                    style="color: var(--soft-violet)"
+                  ></i
+                  >0.07 ETH</span
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary-cyber w-100 py-3"
+                data-bs-dismiss="modal"
+              >
+                CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL COMPRA 3 (Byte Dino) -->
+    <div
+      class="modal fade"
+      id="modalCompra3"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalCompra3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0 mt-2">
+            <h1
+              class="modal-title fs-4 text-white fw-bold"
+              id="modalCompra3Label"
+            >
+              <i
+                class="bi bi-wallet2 me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >Comprar Byte Dino
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary small mb-4">
+              Ingresa los datos de tu wallet para procesar la transacción en la
+              blockchain.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Dirección de Wallet (ETH)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej: 0x71C...976F"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-secondary small fw-bold mb-1"
+                  >Cantidad de NFTs</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  value="1"
+                  min="1"
+                  max="5"
+                  required
+                />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 p-3 rounded-3"
+                style="
+                  background-color: rgba(0, 0, 0, 0.3);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                "
+              >
+                <span class="text-secondary fw-bold">Total a pagar:</span>
+                <!-- Precio Fijo del Modal 3 -->
+                <span class="text-white fw-bold fs-5"
+                  ><i
+                    class="bi bi-gem me-2"
+                    style="color: var(--soft-violet)"
+                  ></i
+                  >0.09 ETH</span
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary-cyber w-100 py-3"
+                data-bs-dismiss="modal"
+              >
+                CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL COMENTARIO PUBLICADO -->
+    <div
+      class="modal fade"
+      id="modalComentario"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalComentarioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0">
+            <h1
+              class="modal-title fs-5 text-white fw-bold"
+              id="modalComentarioLabel"
+            >
+              <i
+                class="bi bi-check-circle-fill me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >¡Comentario Publicado!
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-secondary mt-2">
+            Tu comentario ha sido publicado, ¡Muchas gracias por participar en
+            nuestra comunidad!
+          </div>
+          <div class="modal-footer border-top-0 pt-0">
+            <button
+              type="button"
+              class="btn btn-primary-cyber px-4"
+              data-bs-dismiss="modal"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL UNIRSE A LA COMUNIDAD -->
+    <div
+      class="modal fade"
+      id="modalUnirse"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalUnirseLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <!-- HEADER DEL MODAL -->
+          <div class="modal-header border-bottom-0 pb-0 mt-2">
+            <h1
+              class="modal-title fs-4 text-white fw-bold"
+              id="modalUnirseLabel"
+            >
+              <i
+                class="bi bi-discord me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >Únete a Discord
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- CUERPO DEL MODAL -->
+          <div class="modal-body">
+            <p class="text-secondary small mb-4">
+              Ingresa tu correo electrónico para recibir tu invitación exclusiva
+              a nuestro servidor privado y enterarte antes que nadie de los
+              próximos lanzamientos.
+            </p>
+            <form>
+              <!-- Input de Email -->
+              <div class="mb-4">
+                <label
+                  for="emailComunidad"
+                  class="form-label text-secondary small fw-bold mb-1"
+                  >Correo Electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailComunidad"
+                  placeholder="ejemplo@correo.com"
+                  required
+                />
+              </div>
+              <!-- Botón de Confirmación -->
+              <button
+                type="button"
+                class="btn btn-primary-cyber w-100 py-3"
+                data-bs-dismiss="modal"
+              >
+                UNIRME AHORA <i class="bi bi-send-fill ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer
+      class="mt-5 pt-5 pb-4 border-top"
+      style="border-color: rgba(255, 255, 255, 0.05) !important"
+    >
+      <div class="container">
+        <div class="row text-center text-md-start g-4">
+          <div class="col-md-4">
+            <a
+              class="navbar-brand text-white d-inline-block mb-3"
+              href="#"
+              style="font-size: 1.2rem"
+            >
+              <i
+                class="bi bi-paw-fill text-primary"
+                style="color: var(--soft-violet) !important"
+              ></i>
+              ROLLING NFT
+            </a>
+            <p class="text-secondary small pe-md-4">
+              Colección de NFTs únicos inspirados en la cultura digital y la
+              creatividad sin límites.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h6
+              class="text-white fw-bold mb-3"
+              style="
+                color: var(--soft-violet) !important;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+              "
+            >
+              NAVEGACIÓN
+            </h6>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li>
+                <a
+                  href="./pages/index.html"
+                  class="text-secondary text-decoration-none nav-footer-link"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/collections.html"
+                  class="text-secondary text-decoration-none nav-footer-link"
+                  >Colección</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/proyect.html"
+                  class="text-secondary text-decoration-none nav-footer-link"
+                  >Sobre el proyecto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/contact.html"
+                  class="text-secondary text-decoration-none nav-footer-link"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6
+              class="text-white fw-bold mb-3"
+              style="
+                color: var(--soft-violet) !important;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+              "
+            >
+              REDES
+            </h6>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a
+                href="./pages/contact.html"
+                class="social-icon social-icon-small"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="./pages/contact.html"
+                class="social-icon social-icon-small"
+                ><i class="bi bi-discord"></i
+              ></a>
+              <a
+                href="./pages/contact.html"
+                class="social-icon social-icon-small"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="./pages/contact.html"
+                class="social-icon social-icon-small"
+                ><i class="bi bi-globe"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center mt-5 pt-4 border-top"
+          style="border-color: rgba(255, 255, 255, 0.05) !important"
+        >
+          <p class="text-secondary small mb-0">
+            © 2024 Rolling NFT. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
