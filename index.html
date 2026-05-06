@@ -24,9 +24,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="bg-dark">
-    <!-- HEADER PRINCIPAL -->
     <header>
-      <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
           <a class="navbar-brand text-white d-flex align-items-center" href="#">
@@ -74,7 +72,6 @@
           </div>
         </div>
       </nav>
-      <!-- CAROUSEL (Convertido a div para mantener semántica) -->
       <div
         id="headerCarousel"
         class="carousel slide container mt-4"
@@ -101,7 +98,6 @@
         <div
           class="carousel-inner rounded-4 border border-secondary shadow-lg border-opacity-25"
         >
-          <!-- ITEM 1 -->
           <div class="carousel-item active">
             <div class="banner-mint p-5 d-flex align-items-center">
               <div class="row align-items-center">
@@ -132,7 +128,6 @@
               </div>
             </div>
           </div>
-          <!-- ITEM 2 -->
           <div class="carousel-item">
             <div
               class="banner-mint p-5 d-flex align-items-center"
@@ -168,7 +163,6 @@
               </div>
             </div>
           </div>
-          <!-- ITEM 3 -->
           <div class="carousel-item">
             <div
               class="banner-mint p-5 d-flex align-items-center"
@@ -203,7 +197,6 @@
             </div>
           </div>
         </div>
-        <!-- CONTROLES -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -226,7 +219,6 @@
         </button>
       </div>
     </header>
-    <!-- SECCIÓN COLECCIÓN (NUEVA) -->
     <section id="coleccion" class="container mt-5 pt-5">
       <div class="text-center mb-5">
         <p
@@ -243,7 +235,6 @@
         <p class="text-secondary">Cada pieza es única. No hay dos iguales.</p>
       </div>
       <div class="row g-4">
-        <!-- Tarjeta 1 -->
         <div class="col-md-4">
           <div class="card-nft d-flex flex-column">
             <img
@@ -261,7 +252,6 @@
             <div class="d-flex align-items-center mb-3 text-white fw-bold">
               <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.08 ETH
             </div>
-            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
             <button
               type="button"
               class="btn btn-primary-cyber w-100 py-2"
@@ -272,7 +262,6 @@
             </button>
           </div>
         </div>
-        <!-- Tarjeta 2 -->
         <div class="col-md-4">
           <div class="card-nft d-flex flex-column">
             <img
@@ -290,7 +279,6 @@
             <div class="d-flex align-items-center mb-3 text-white fw-bold">
               <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.07 ETH
             </div>
-            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
             <button
               type="button"
               class="btn btn-primary-cyber w-100 py-2"
@@ -301,7 +289,6 @@
             </button>
           </div>
         </div>
-        <!-- Tarjeta 3 -->
         <div class="col-md-4">
           <div class="card-nft d-flex flex-column">
             <img
@@ -319,7 +306,6 @@
             <div class="d-flex align-items-center mb-3 text-white fw-bold">
               <i class="bi bi-gem me-2" style="color: #a3a3c2"></i> 0.09 ETH
             </div>
-            <!-- BOTÓN CON ACTIVADOR DE MODAL -->
             <button
               type="button"
               class="btn btn-primary-cyber w-100 py-2"
@@ -332,10 +318,8 @@
         </div>
       </div>
     </section>
-    <!-- SECCIÓN FORO COMUNITARIO -->
     <section class="container mt-5 pt-4 pb-4">
       <div class="forum-container p-4 rounded-4 position-relative">
-        <!-- Encabezado del Foro -->
         <div
           class="d-flex justify-content-between align-items-center mb-4 pb-2"
         >
@@ -352,20 +336,27 @@
             <span class="text-white">ÚLTIMOS COMENTARIOS</span>
           </div>
           <div class="d-flex gap-3 fs-5">
-            <a href="#" class="text-secondary forum-icon"
+            <a
+              href="https://x.com/?lang=es"
+              target="_blank"
+              class="text-secondary forum-icon"
               ><i class="bi bi-twitter-x"></i
             ></a>
-            <a href="#" class="text-secondary forum-icon"
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-secondary forum-icon"
               ><i class="bi bi-instagram"></i
             ></a>
-            <a href="#" class="text-secondary forum-icon"
+            <a
+              href="https://discord.com/"
+              target="_blank"
+              class="text-secondary forum-icon"
               ><i class="bi bi-discord"></i
             ></a>
           </div>
         </div>
-        <!-- Lista de Comentarios -->
         <div class="comments-list mb-4">
-          <!-- Comentario 1 -->
           <div
             class="d-flex align-items-md-center align-items-start mb-3 flex-column flex-md-row"
           >
@@ -391,7 +382,6 @@
               <i class="bi bi-hand-thumbs-up-fill me-1"></i> 12
             </div>
           </div>
-          <!-- Comentario 2 -->
           <div
             class="d-flex align-items-md-center align-items-start mb-3 flex-column flex-md-row"
           >
@@ -419,7 +409,6 @@
               <i class="bi bi-heart-fill me-1"></i> 8
             </div>
           </div>
-          <!-- Comentario 3 -->
           <div
             class="d-flex align-items-md-center align-items-start mb-4 flex-column flex-md-row"
           >
@@ -449,49 +438,53 @@
             </div>
           </div>
         </div>
-        <!-- Área de Ingreso de Texto -->
-        <div class="d-flex align-items-center mb-3 gap-2">
-          <span class="text-white" style="font-size: 0.9rem"
-            >Comentar como:</span
+        <form id="formularioComentario">
+          <div class="d-flex align-items-center mb-3 gap-2">
+            <span class="text-white" style="font-size: 0.9rem"
+              >Comentar como:</span
+            >
+            <input
+              type="text"
+              class="form-control form-control-cyber form-control-sm"
+              placeholder="Tu nombre de usuario"
+              style="max-width: 250px"
+              required
+            />
+          </div>
+          <div
+            class="d-flex align-items-md-center align-items-stretch gap-3 flex-column flex-md-row"
           >
-          <input
-            type="text"
-            class="form-control form-control-cyber form-control-sm"
-            placeholder="Tu nombre de usuario"
-            style="max-width: 250px"
-          />
-        </div>
-        <div
-          class="d-flex align-items-md-center align-items-stretch gap-3 flex-column flex-md-row"
-        >
-          <a
-            href="#contacto"
-            class="text-decoration-none"
-            style="
-              color: var(--soft-violet);
-              font-size: 0.9rem;
-              white-space: nowrap;
-            "
-            >@Hablemos</a
-          >
-          <input
-            type="text"
-            class="form-control form-control-cyber flex-grow-1"
-            placeholder="Escribe un mensaje..."
-          />
-          <button
-            type="button"
-            class="btn btn-primary-cyber fw-bold"
-            style="white-space: nowrap; font-size: 0.85rem; padding: 10px 25px"
-            data-bs-toggle="modal"
-            data-bs-target="#modalComentario"
-          >
-            PUBLICAR COMENTARIO
-          </button>
-        </div>
+            <a
+              href="#contacto"
+              class="text-decoration-none"
+              style="
+                color: var(--soft-violet);
+                font-size: 0.9rem;
+                white-space: nowrap;
+              "
+              >@Hablemos</a
+            >
+            <input
+              type="text"
+              class="form-control form-control-cyber flex-grow-1"
+              placeholder="Escribe un mensaje..."
+              required
+            />
+            <button
+              type="submit"
+              class="btn btn-primary-cyber fw-bold"
+              style="
+                white-space: nowrap;
+                font-size: 0.85rem;
+                padding: 10px 25px;
+              "
+            >
+              PUBLICAR COMENTARIO
+            </button>
+          </div>
+        </form>
       </div>
     </section>
-    <!-- BANNER MINT PROFESIONAL -->
     <section class="container mt-5 pt-5 d-none d-lg-block">
       <div class="banner-mint-profesional position-relative overflow-hidden">
         <div class="banner-bg-image"></div>
@@ -518,7 +511,6 @@
         </div>
       </div>
     </section>
-    <!-- SECCIÓN CONTACTO -->
     <section id="contacto" class="container mt-5 pt-4 pb-5">
       <div class="row g-5 align-items-center">
         <div class="col-lg-5">
@@ -538,22 +530,35 @@
             responderemos lo antes posible.
           </p>
           <div class="d-flex gap-3">
-            <a href="https://www.x.com/?lang=es" class="social-icon"
+            <a
+              href="https://www.x.com/?lang=es"
+              target="_blank"
+              class="social-icon"
               ><i class="bi bi-twitter-x"></i
             ></a>
-            <a href="https://www.discord.com/" class="social-icon"
+            <a
+              href="https://www.discord.com/"
+              target="_blank"
+              class="social-icon"
               ><i class="bi bi-discord"></i
             ></a>
-            <a href="https://www.instagram.com" class="social-icon"
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-icon"
               ><i class="bi bi-instagram"></i
             ></a>
-            <a href="https://mail.google.com/" class="social-icon"
+            <a
+              href="https://mail.google.com/"
+              target="_blank"
+              class="social-icon"
               ><i class="bi bi-envelope"></i
             ></a>
           </div>
         </div>
         <div class="col-lg-7">
           <form
+            id="formularioContacto"
             class="p-4 rounded-4"
             style="
               background-color: var(--dark-purple);
@@ -566,6 +571,7 @@
                   type="text"
                   class="form-control form-control-cyber"
                   placeholder="Tu nombre"
+                  required
                 />
               </div>
               <div class="col-md-6">
@@ -573,6 +579,7 @@
                   type="email"
                   class="form-control form-control-cyber"
                   placeholder="Tu correo"
+                  required
                 />
               </div>
             </div>
@@ -581,77 +588,120 @@
                 class="form-control form-control-cyber"
                 rows="4"
                 placeholder="Tu mensaje"
+                required
               ></textarea>
             </div>
-            <button
-              type="button"
-              class="btn btn-primary-cyber w-100 py-3"
-              data-bs-toggle="modal"
-              data-bs-target="#modalContacto"
-            >
+            <button type="submit" class="btn btn-primary-cyber w-100 py-3">
               Enviar mensaje <i class="bi bi-send-fill ms-2"></i>
             </button>
           </form>
         </div>
       </div>
-      <!-- MODAL CYBERPUNK -->
-      <div
-        class="modal fade"
-        id="modalContacto"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="modalContactoLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <!-- Centrado verticalmente -->
-          <div
-            class="modal-content"
-            style="
-              background-color: var(--dark-purple);
-              border: 1px solid var(--soft-violet);
-              box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
-            "
-          >
-            <div class="modal-header border-bottom-0 pb-0">
-              <h1
-                class="modal-title fs-5 text-white fw-bold"
-                id="modalContactoLabel"
-              >
-                <i
-                  class="bi bi-check-circle-fill me-2"
-                  style="color: var(--vibrant-violet)"
-                ></i
-                >Mensaje Enviado
-              </h1>
-              <!-- Botón "X" configurado en blanco -->
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-secondary mt-2">
-              Gracias por comunicarte con nosotros. Hemos recibido tu mensaje,
-              nuestro equipo se pondrá en contacto a la brevedad.
-            </div>
-            <div class="modal-footer border-top-0 pt-0">
-              <!-- Botón primario (Accept) -->
-              <button
-                type="button"
-                class="btn btn-primary-cyber px-4"
-                data-bs-dismiss="modal"
-              >
-                Aceptar
-              </button>
-            </div>
+    </section>
+    <div
+      class="modal fade"
+      id="modalContacto"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalContactoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0">
+            <h1
+              class="modal-title fs-5 text-white fw-bold"
+              id="modalContactoLabel"
+            >
+              <i
+                class="bi bi-check-circle-fill me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >Mensaje Enviado
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-secondary mt-2">
+            Gracias por comunicarte con nosotros. Hemos recibido tu mensaje,
+            nuestro equipo se pondrá en contacto a la brevedad.
+          </div>
+          <div class="modal-footer border-top-0 pt-0">
+            <button
+              type="button"
+              class="btn btn-primary-cyber px-4"
+              data-bs-dismiss="modal"
+            >
+              Aceptar
+            </button>
           </div>
         </div>
       </div>
-    </section>
-    <!-- MODAL COMPRA 1 (Code Master - 0.08 ETH) -->
+    </div>
+    <div
+      class="modal fade"
+      id="modalComentario"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalComentarioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: var(--dark-purple);
+            border: 1px solid var(--soft-violet);
+            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
+          "
+        >
+          <div class="modal-header border-bottom-0 pb-0">
+            <h1
+              class="modal-title fs-5 text-white fw-bold"
+              id="modalComentarioLabel"
+            >
+              <i
+                class="bi bi-check-circle-fill me-2"
+                style="color: var(--vibrant-violet)"
+              ></i
+              >¡Comentario Publicado!
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-secondary mt-2">
+            Tu comentario ha sido publicado, ¡Muchas gracias por participar en
+            nuestra comunidad!
+          </div>
+          <div class="modal-footer border-top-0 pt-0">
+            <button
+              type="button"
+              class="btn btn-primary-cyber px-4"
+              data-bs-dismiss="modal"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="modal fade"
       id="modalCompra1"
@@ -726,7 +776,6 @@
                 "
               >
                 <span class="text-secondary fw-bold">Total a pagar:</span>
-                <!-- Precio Fijo del Modal 1 -->
                 <span class="text-white fw-bold fs-5"
                   ><i
                     class="bi bi-gem me-2"
@@ -735,11 +784,7 @@
                   >0.08 ETH</span
                 >
               </div>
-              <button
-                type="button"
-                class="btn btn-primary-cyber w-100 py-3"
-                data-bs-dismiss="modal"
-              >
+              <button type="submit" class="btn btn-primary-cyber w-100 py-3">
                 CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
               </button>
             </form>
@@ -747,7 +792,6 @@
         </div>
       </div>
     </div>
-    <!-- MODAL COMPRA 2 (Chill Coder - 0.07 ETH) -->
     <div
       class="modal fade"
       id="modalCompra2"
@@ -822,7 +866,6 @@
                 "
               >
                 <span class="text-secondary fw-bold">Total a pagar:</span>
-                <!-- Precio Fijo del Modal 2 -->
                 <span class="text-white fw-bold fs-5"
                   ><i
                     class="bi bi-gem me-2"
@@ -831,11 +874,7 @@
                   >0.07 ETH</span
                 >
               </div>
-              <button
-                type="button"
-                class="btn btn-primary-cyber w-100 py-3"
-                data-bs-dismiss="modal"
-              >
+              <button type="submit" class="btn btn-primary-cyber w-100 py-3">
                 CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
               </button>
             </form>
@@ -843,7 +882,6 @@
         </div>
       </div>
     </div>
-    <!-- MODAL COMPRA 3 (Byte Dino) -->
     <div
       class="modal fade"
       id="modalCompra3"
@@ -918,7 +956,6 @@
                 "
               >
                 <span class="text-secondary fw-bold">Total a pagar:</span>
-                <!-- Precio Fijo del Modal 3 -->
                 <span class="text-white fw-bold fs-5"
                   ><i
                     class="bi bi-gem me-2"
@@ -927,11 +964,7 @@
                   >0.09 ETH</span
                 >
               </div>
-              <button
-                type="button"
-                class="btn btn-primary-cyber w-100 py-3"
-                data-bs-dismiss="modal"
-              >
+              <button type="submit" class="btn btn-primary-cyber w-100 py-3">
                 CONFIRMAR TRANSACCIÓN <i class="bi bi-shield-check ms-2"></i>
               </button>
             </form>
@@ -939,60 +972,6 @@
         </div>
       </div>
     </div>
-    <!-- MODAL COMENTARIO PUBLICADO -->
-    <div
-      class="modal fade"
-      id="modalComentario"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="modalComentarioLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div
-          class="modal-content"
-          style="
-            background-color: var(--dark-purple);
-            border: 1px solid var(--soft-violet);
-            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
-          "
-        >
-          <div class="modal-header border-bottom-0 pb-0">
-            <h1
-              class="modal-title fs-5 text-white fw-bold"
-              id="modalComentarioLabel"
-            >
-              <i
-                class="bi bi-check-circle-fill me-2"
-                style="color: var(--vibrant-violet)"
-              ></i
-              >¡Comentario Publicado!
-            </h1>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body text-secondary mt-2">
-            Tu comentario ha sido publicado, ¡Muchas gracias por participar en
-            nuestra comunidad!
-          </div>
-          <div class="modal-footer border-top-0 pt-0">
-            <button
-              type="button"
-              class="btn btn-primary-cyber px-4"
-              data-bs-dismiss="modal"
-            >
-              Aceptar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MODAL UNIRSE A LA COMUNIDAD -->
     <div
       class="modal fade"
       id="modalUnirse"
@@ -1011,7 +990,6 @@
             box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
           "
         >
-          <!-- HEADER DEL MODAL -->
           <div class="modal-header border-bottom-0 pb-0 mt-2">
             <h1
               class="modal-title fs-4 text-white fw-bold"
@@ -1030,15 +1008,12 @@
               aria-label="Close"
             ></button>
           </div>
-          <!-- CUERPO DEL MODAL -->
           <div class="modal-body">
             <p class="text-secondary small mb-4">
               Ingresa tu correo electrónico para recibir tu invitación exclusiva
-              a nuestro servidor privado y enterarte antes que nadie de los
-              próximos lanzamientos.
+              a nuestro servidor privado.
             </p>
-            <form>
-              <!-- Input de Email -->
+            <form id="formularioUnirse">
               <div class="mb-4">
                 <label
                   for="emailComunidad"
@@ -1053,12 +1028,7 @@
                   required
                 />
               </div>
-              <!-- Botón de Confirmación -->
-              <button
-                type="button"
-                class="btn btn-primary-cyber w-100 py-3"
-                data-bs-dismiss="modal"
-              >
+              <button type="submit" class="btn btn-primary-cyber w-100 py-3">
                 UNIRME AHORA <i class="bi bi-send-fill ms-2"></i>
               </button>
             </form>
@@ -1066,7 +1036,6 @@
         </div>
       </div>
     </div>
-    <!-- FOOTER -->
     <footer
       class="mt-5 pt-5 pb-4 border-top"
       style="border-color: rgba(255, 255, 255, 0.05) !important"
@@ -1148,22 +1117,23 @@
             >
               <a
                 href="https://www.x.com/?lang=es"
+                target="_blank"
                 class="social-icon social-icon-small"
                 ><i class="bi bi-twitter-x"></i
               ></a>
               <a
                 href="https://discord.com/"
+                target="_blank"
                 class="social-icon social-icon-small"
                 ><i class="bi bi-discord"></i
               ></a>
               <a
                 href="https://www.instagram.com/"
+                target="_blank"
                 class="social-icon social-icon-small"
                 ><i class="bi bi-instagram"></i
               ></a>
-              <a
-                href="./index.html"
-                class="social-icon social-icon-small"
+              <a href="./index.html" class="social-icon social-icon-small"
                 ><i class="bi bi-globe"></i
               ></a>
             </div>
@@ -1180,5 +1150,62 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const formComentario = document.getElementById("formularioComentario");
+        if (formComentario) {
+          formComentario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            const modalComentario = bootstrap.Modal.getOrCreateInstance(
+              document.getElementById("modalComentario"),
+            );
+            modalComentario.show();
+            formComentario.reset();
+          });
+        }
+        const formContacto = document.getElementById("formularioContacto");
+        if (formContacto) {
+          formContacto.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            const modalContacto = bootstrap.Modal.getOrCreateInstance(
+              document.getElementById("modalContacto"),
+            );
+            modalContacto.show();
+            formContacto.reset();
+          });
+        }
+        const formUnirse = document.getElementById("formularioUnirse");
+        if (formUnirse) {
+          formUnirse.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            const modalUnirse = bootstrap.Modal.getOrCreateInstance(
+              document.getElementById("modalUnirse"),
+            );
+            modalUnirse.hide();
+            formUnirse.reset();
+          });
+        }
+        const idsModalesCompra = [
+          "modalCompra1",
+          "modalCompra2",
+          "modalCompra3",
+        ];
+        idsModalesCompra.forEach(function (id) {
+          const modalHtml = document.getElementById(id);
+          if (modalHtml) {
+            const formCompra = modalHtml.querySelector("form");
+            if (formCompra) {
+              formCompra.addEventListener("submit", function (evento) {
+                evento.preventDefault();
+                const instanciaModal =
+                  bootstrap.Modal.getOrCreateInstance(modalHtml);
+                instanciaModal.hide();
+                formCompra.reset();
+              });
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
