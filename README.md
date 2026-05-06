@@ -1,44 +1,53 @@
 # 🚀 Rolling NFT | Landing Page Project
 
-¡Bienvenidos al repositorio oficial de **Rolling NFT**! 
+Welcome to the official repository of **Rolling NFT**!
 
-Este proyecto consiste en el desarrollo de una landing page interactiva para una colección ficticia de arte digital (NFTs). Fue construido simulando un entorno de trabajo corporativo y ágil, priorizando la escalabilidad, la experiencia de usuario (UX/UI) y las buenas prácticas de desarrollo web.
+This project consists of the development of an interactive landing page for a fictional digital art (NFT) collection. It was built simulating an agile corporate work environment, prioritizing scalability, user experience (UX/UI), and web development best practices.
 
-## 🎯 Objetivo del Proyecto (Sprint Goal)
-El objetivo principal del Sprint fue desarrollar una landing page simple y funcional, respetando una estructura básica de secciones y priorizando un diseño claro, ordenado y responsive. Adicionalmente, se integró un Footer completo a pedido del Cliente.
+## 🎯 Project Objective (Sprint Goal)
 
-## 🛠️ Stack Tecnológico
-Para garantizar un diseño moderno, dinámico y responsivo, utilizamos las siguientes tecnologías:
-* **HTML5 Semántico**: Estructuración del DOM con etiquetas modernas.
-* **CSS3 (Custom Properties)**: Variables globales para el manejo del *Dark Theme Cyberpunk*.
-* **Bootstrap 5.3**: Sistema de grillas, componentes pre-estilizados y clases utilitarias.
-* **Vanilla JavaScript**: Lógica de modales, prevención de recargas (SPA simulation) y validación de formularios en el cliente.
+The main objective of the Sprint was to develop a simple and functional landing page, respecting a basic structure of sections and prioritizing a clear, organized, and responsive design. Additionally, a complete Footer was integrated at the Client's request.
 
-## ✨ Funcionalidades Principales (Sprint Backlog)
-El desarrollo abarcó los siguientes requerimientos priorizados:
-* **Header & Navbar**: Navegación principal intuitiva y marca del proyecto.
-* **Hero Carousel**: Presentación visual inmersiva con imágenes temáticas y *Call to Actions* (CTAs).
-* **Colección (Cards)**: Exhibición de al menos 3 NFTs interactivos con opciones de "compra".
-* **Formulario de Contacto**: Integrado para consultas directas.
-* **Footer Profesional**: Pie de página con enlaces de navegación, redes sociales y branding.
+## 🛠️ Tech Stack
 
-## 🏗️ Arquitectura y Flujo de Trabajo (CI/CD)
-Este proyecto fue gestionado bajo la metodología **Scrumban** utilizando Trello para la organización de tareas. 
+To ensure a modern, dynamic, and responsive design, we used the following technologies:
 
-A nivel técnico, establecimos un control de versiones centralizado en **GitHub**, utilizando una estrategia de ramas (`main` y `dev`) para proteger el código de producción. El despliegue continuo (CI/CD) fue configurado mediante **Netlify**, permitiendo actualizaciones *Zero-Downtime* cada vez que se aprobaban cambios en la rama principal.
+- **Semantic HTML5**: DOM structuring with modern tags.
+- **CSS3 (Custom Properties)**: Global variables for handling the _Dark Theme Cyberpunk_.
+- **Bootstrap 5.3**: Grid system, pre-styled components, and utility classes.
 
-## 👥 El Equipo
-Este proyecto fue posible gracias a la colaboración constante y la división de tareas de nuestro equipo de desarrollo y liderazgo:
+## ✨ Main Features (Sprint Backlog)
 
-**Equipo de Desarrollo (Developers)**:
-* Francisco Delgado
-* Franco Triviño
-* Nicolas Brizuela
+The development covered the following prioritized requirements:
 
-**Liderazgo y Gestión**:
-* **Product Owner:** Sil Medina
-* **Líder Técnico:** Daniela Cardozo, José Diaz
-* **Scrum Masters:** Andrés Tirador, Lucía David, Facundo López
+- **Header & Navbar**: Intuitive main navigation and project branding.
+- **Hero Carousel**: Immersive visual presentation with themed images and _Call to Actions_ (CTAs).
+- **Collection (Cards)**: Display of at least 3 interactive NFTs with "purchase" options.
+- **Contact Form**: Integrated for direct inquiries.
+- **Professional Footer**: Footer with navigation links, social media, and branding.
+
+## 🏗️ Architecture and Workflow (CI/CD)
+
+This project was managed under the **Scrumban** methodology using Trello for task organization.
+
+At a technical level, we established a centralized version control system on **GitHub**, using a branching strategy (`main` and `dev`) to protect production code. Continuous deployment (CI/CD) was configured via **Netlify**, enabling _Zero-Downtime_ updates whenever changes were approved in the main branch.
+
+## 👥 The Team
+
+This project was made possible thanks to the constant collaboration and task division of our development and leadership team:
+
+**Development Team (Developers)**:
+
+- Francisco Delgado
+- Franco Triviño
+- Nicolas Brizuela
+
+**Leadership and Management**:
+
+- **Product Owner:** Sil Medina
+- **Tech Lead:** José Díaz
+- **Scrum Masters:** Andrés Tirador, Lucía David, Facundo López
 
 ---
-*Desarrollado con pasión durante el Sprint #1 (Abril - Mayo 2026).*
+
+_Developed with passion during Sprint #1 (April - May 2026)._
