@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-lg-6 d-none d-lg-block text-center">
                   <img
-                    src="./assets/img/dog.jpg"
+                    src="./assets/img/bot.png"
                     class="img-fluid rounded-4 shadow-lg"
                     alt="Code Master Bull Terrier"
                   />
@@ -158,7 +158,7 @@
                 </div>
                 <div class="col-lg-6 d-none d-lg-block text-center">
                   <img
-                    src="./assets/img/cat.jpg"
+                    src="./assets/img/girl.png"
                     class="img-fluid rounded-4 shadow-lg"
                     alt="Chill Coder Cat"
                   />
@@ -168,12 +168,12 @@
           </div>
           <div class="carousel-item">
             <div
-              class="banner-mint p-5 d-flex align-items-center"
+              class="banner-mint banner-mint-profesional p-5 d-flex align-items-center"
               style="
                 background: linear-gradient(90deg, #1e1e3f 0%, #0b0e22 100%);
               "
             >
-              <div class="row align-items-center">
+              <div class="row align-items-center w-100">
                 <div class="col-lg-6 px-lg-5">
                   <h1 class="display-4 fw-bold mb-3">
                     EL FUTURO <br /><span class="text-vibrant">ES AHORA.</span>
@@ -191,8 +191,9 @@
                 </div>
                 <div class="col-lg-6 d-none d-lg-block text-center">
                   <img
-                    src="./assets/img/dinosaur.jpg"
+                    src="./assets/img/pinguin.png"
                     class="img-fluid rounded-4 shadow-lg"
+                    style="max-height: 280px; object-fit: contain"
                     alt="Byte Dino"
                   />
                 </div>
@@ -672,15 +673,18 @@
       </div>
     </section>
     <section class="container mt-5 pt-5 d-none d-lg-block">
-      <div class="banner-mint-profesional position-relative overflow-hidden">
+      <div
+        class="banner-mint-profesional position-relative overflow-hidden rounded-4"
+      >
         <div class="banner-bg-image"></div>
+
         <div
-          class="banner-content d-flex flex-column align-items-center justify-content-center text-center p-5"
+          class="banner-content d-flex flex-column align-items-center justify-content-center text-center p-5 w-100 h-100"
         >
           <span class="badge-mint mb-3">
             <i class="bi bi-fire me-1"></i> DISCORD DISPONIBLE AHORA
           </span>
-          <h2 class="display-4 fw-bold mb-2">
+          <h2 class="display-4 fw-bold mb-2 text-white">
             Únete a la comunidad <span class="text-vibrant">Rolling NFT</span>
           </h2>
           <p class="text-secondary mb-4 opacity-75">
@@ -688,7 +692,7 @@
           </p>
           <button
             type="button"
-            class="btn btn-primary-cyber btn-lg"
+            class="btn btn-primary-cyber btn-lg px-5"
             data-bs-toggle="modal"
             data-bs-target="#modalUnirse"
           >
@@ -1161,8 +1165,6 @@
     <div
       class="modal fade"
       id="modalUnirse"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
       tabindex="-1"
       aria-labelledby="modalUnirseLabel"
       aria-hidden="true"
@@ -1173,20 +1175,12 @@
           style="
             background-color: var(--dark-purple);
             border: 1px solid var(--soft-violet);
-            box-shadow: 0 0 20px rgba(163, 137, 244, 0.2);
           "
         >
-          <div class="modal-header border-bottom-0 pb-0 mt-2">
-            <h1
-              class="modal-title fs-4 text-white fw-bold"
-              id="modalUnirseLabel"
-            >
-              <i
-                class="bi bi-discord me-2"
-                style="color: var(--vibrant-violet)"
-              ></i
-              >Únete a Discord
-            </h1>
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-white fw-bold" id="modalUnirseLabel">
+              <i class="bi bi-discord me-2"></i>Comunidad Rolling NFT
+            </h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -1194,28 +1188,23 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <p class="text-secondary small mb-4">
-              Ingresa tu correo electrónico para recibir tu invitación exclusiva
-              a nuestro servidor privado.
+          <div class="modal-body text-secondary">
+            <p>
+              ¿Estás listo para sumarte a nuestro Discord oficial y enterarte de
+              todas las novedades?
             </p>
-            <form id="formularioUnirse">
-              <div class="mb-4">
-                <label
-                  for="emailComunidad"
-                  class="form-label text-secondary small fw-bold mb-1"
-                  >Correo Electrónico</label
-                >
+            <form id="formUnirseComunidad">
+              <div class="mb-3">
+                <label class="form-label small">Tu correo electrónico</label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="emailComunidad"
-                  placeholder="ejemplo@correo.com"
+                  class="form-control form-control-cyber"
+                  placeholder="nombre@ejemplo.com"
                   required
                 />
               </div>
-              <button type="submit" class="btn btn-primary-cyber w-100 py-3">
-                UNIRME AHORA <i class="bi bi-send-fill ms-2"></i>
+              <button type="submit" class="btn btn-primary-cyber w-100">
+                Solicitar Acceso
               </button>
             </form>
           </div>

@@ -37,7 +37,7 @@ body::before {
   transform: scale(1.1);
 }
 
-/* Tipografía */
+/* --- Tipografía --- */
 h1,
 h2,
 h3,
@@ -49,7 +49,7 @@ h6,
   letter-spacing: 0.5px;
 }
 
-/* Navbar */
+/* --- Navbar --- */
 .navbar {
   background-color: rgba(11, 14, 34, 0.95);
   border-bottom: 1px solid rgba(163, 137, 244, 0.2);
@@ -75,7 +75,7 @@ h6,
   border-bottom: 2px solid var(--soft-violet);
 }
 
-/* Botones Cyber */
+/* --- Botones Cyber --- */
 .btn-outline-cyber {
   border: 2px solid var(--soft-violet);
   color: var(--soft-violet);
@@ -109,7 +109,100 @@ h6,
   color: #fff;
 }
 
-/* Componentes Visuales */
+/* --- Banners y Carruseles --- */
+.banner-mint {
+  width: 100%;
+  height: 450px;
+  border-radius: 24px;
+  border: 1px solid rgba(209, 139, 255, 0.3);
+  transition: var(--transition);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-purple);
+}
+
+.carousel-item .banner-mint {
+  height: 450px;
+}
+
+/* Ajuste de imagen para consistencia 16:9 */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.text-vibrant {
+  color: var(--vibrant-violet);
+  text-shadow: 0 0 15px rgba(209, 139, 255, 0.5);
+}
+
+/* --- Banner Profesional --- */
+.banner-mint-profesional {
+  height: 450px; /* Cambiamos min-height por height fijo para control total */
+  background-color: var(--dark-purple);
+  border: 1px solid rgba(163, 137, 244, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden; /* CRITICO: Corta cualquier desborde de la imagen */
+  border-radius: 24px; /* Asegura que las esquinas coincidan */
+}
+
+.banner-mint-profesional:hover {
+  border-color: var(--vibrant-violet);
+  box-shadow: 0 0 30px rgba(163, 137, 244, 0.2);
+}
+
+.banner-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Usamos background-image con una ruta relativa limpia */
+  background-image: url("../assets/img/banner.png");
+
+  /* background-size: 100% 100% fuerza a la imagen a medir lo mismo que el div, 
+     aunque si la proporción es distinta se puede estirar un poco. 
+     Si quieres que no se deforme pero llene exacto, usa 'cover' */
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: 1;
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+
+/* El efecto hover ahora no se saldrá de los bordes del banner */
+.banner-mint-profesional:hover .banner-bg-image {
+  transform: scale(
+    1.08
+  ); /* Un zoom ligeramente mayor para que se note la profundidad */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%; /* Asegura que el contenido ocupe el ancho */
+  height: 100%; /* Asegura que el contenido ocupe el alto para centrar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 63, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* --- Componentes de Cards y Badges --- */
 .card-nft {
   background-color: var(--dark-purple);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -125,6 +218,15 @@ h6,
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
+.badge-id {
+  background-color: rgba(163, 137, 244, 0.2);
+  color: var(--text-primary);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .form-control-cyber {
   background-color: rgba(11, 14, 34, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -133,16 +235,7 @@ h6,
   border-radius: 10px;
 }
 
-.form-control-cyber:focus {
-  background-color: rgba(11, 14, 34, 0.8);
-  border-color: var(--soft-violet);
-  box-shadow: 0 0 10px rgba(163, 137, 244, 0.2);
-}
-
-/* =========================================
-   SECCIÓN FORO - AUTO-MARQUEE
-   ========================================= */
-
+/* --- SECCIÓN FORO (Auto-Marquee) --- */
 .forum-container {
   background-color: #1a1a2e;
   border: 1px solid rgba(163, 137, 244, 0.4);
@@ -152,9 +245,8 @@ h6,
 
 .forum-scroll-container {
   position: relative;
-  height: 350px; /* Tamaño fijo solicitado */
+  height: 400px;
   overflow: hidden;
-  /* Efecto Fading */
   mask-image: linear-gradient(
     to bottom,
     transparent,
@@ -177,7 +269,6 @@ h6,
   animation: scroll-infinite 25s linear infinite;
 }
 
-/* Pausar al pasar el mouse */
 .forum-scroll-container:hover .marquee-content {
   animation-play-state: paused;
 }
@@ -205,24 +296,39 @@ h6,
   border: 1px solid var(--soft-violet);
 }
 
-.forum-icon {
-  transition: var(--transition);
-}
-.forum-icon:hover {
-  color: var(--vibrant-violet) !important;
-  transform: scale(1.1);
+/* --- Páginas de Error e Información --- */
+.about-card,
+.error-card,
+.contact-card,
+.collection-card {
+  background-color: var(--dark-purple);
+  border: 1px solid rgba(163, 137, 244, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: auto;
 }
 
-/* Responsivo */
+.display-404 {
+  font-size: 7rem;
+  color: var(--text-primary);
+  text-shadow: 0 0 25px rgba(209, 139, 255, 0.6);
+}
+
+/* --- Responsivo --- */
 @media (max-width: 991px) {
   .display-4 {
     font-size: 2.2rem;
   }
-  .banner-mint {
-    min-height: auto;
-    padding: 2rem 1rem;
+  .carousel-item .banner-mint {
+    height: auto;
+    min-height: 400px;
+    padding: 2rem 1rem !important;
   }
+  .banner-mint-profesional,
   .forum-scroll-container {
     height: 250px;
+  }
+  .carousel-item img {
+    max-height: 280px;
   }
 }
