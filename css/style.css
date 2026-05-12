@@ -31,7 +31,7 @@ body::before {
   height: 100vh;
   background:
     linear-gradient(rgba(11, 14, 34, 0.85), rgba(11, 14, 34, 0.9)),
-    url("../assets/img/fondo.png") center/cover no-repeat;
+    url("../assets/img/bg-plexus.jpg") center/cover no-repeat;
   filter: blur(10px);
   z-index: -1;
   transform: scale(1.1);
@@ -217,6 +217,18 @@ h6,
   color: var(--text-primary);
   padding: 12px 15px;
   border-radius: 10px;
+}
+
+.form-control-cyber:focus {
+  background-color: rgba(11, 14, 34, 0.8);
+  border-color: var(--soft-violet);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px rgba(163, 137, 244, 0.2);
+}
+
+.form-control-cyber::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 .forum-container {
