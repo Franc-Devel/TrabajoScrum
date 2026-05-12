@@ -37,7 +37,6 @@ body::before {
   transform: scale(1.1);
 }
 
-/* --- Tipografía --- */
 h1,
 h2,
 h3,
@@ -49,7 +48,6 @@ h6,
   letter-spacing: 0.5px;
 }
 
-/* --- Navbar --- */
 .navbar {
   background-color: rgba(11, 14, 34, 0.95);
   border-bottom: 1px solid rgba(163, 137, 244, 0.2);
@@ -75,7 +73,6 @@ h6,
   border-bottom: 2px solid var(--soft-violet);
 }
 
-/* --- Botones Cyber --- */
 .btn-outline-cyber {
   border: 2px solid var(--soft-violet);
   color: var(--soft-violet);
@@ -109,7 +106,6 @@ h6,
   color: #fff;
 }
 
-/* --- Banners y Carruseles --- */
 .banner-mint {
   width: 100%;
   height: 450px;
@@ -126,7 +122,6 @@ h6,
   height: 450px;
 }
 
-/* Ajuste de imagen para consistencia 16:9 */
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -139,9 +134,8 @@ h6,
   text-shadow: 0 0 15px rgba(209, 139, 255, 0.5);
 }
 
-/* --- Banner Profesional --- */
 .banner-mint-profesional {
-  height: 450px; /* Cambiamos min-height por height fijo para control total */
+  height: 450px;
   background-color: var(--dark-purple);
   border: 1px solid rgba(163, 137, 244, 0.3);
   display: flex;
@@ -150,8 +144,8 @@ h6,
   transition: var(--transition);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
-  overflow: hidden; /* CRITICO: Corta cualquier desborde de la imagen */
-  border-radius: 24px; /* Asegura que las esquinas coincidan */
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 .banner-mint-profesional:hover {
@@ -165,14 +159,8 @@ h6,
   left: 0;
   width: 100%;
   height: 100%;
-  /* Usamos background-image con una ruta relativa limpia */
   background-image: url("../assets/img/banner.png");
-
-  /* background-size: 100% 100% fuerza a la imagen a medir lo mismo que el div, 
-     aunque si la proporción es distinta se puede estirar un poco. 
-     Si quieres que no se deforme pero llene exacto, usa 'cover' */
   background-size: cover;
-
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -181,18 +169,15 @@ h6,
   pointer-events: none;
 }
 
-/* El efecto hover ahora no se saldrá de los bordes del banner */
 .banner-mint-profesional:hover .banner-bg-image {
-  transform: scale(
-    1.08
-  ); /* Un zoom ligeramente mayor para que se note la profundidad */
+  transform: scale(1.08);
 }
 
 .banner-content {
   position: relative;
   z-index: 2;
-  width: 100%; /* Asegura que el contenido ocupe el ancho */
-  height: 100%; /* Asegura que el contenido ocupe el alto para centrar */
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,7 +187,6 @@ h6,
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* --- Componentes de Cards y Badges --- */
 .card-nft {
   background-color: var(--dark-purple);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -235,7 +219,6 @@ h6,
   border-radius: 10px;
 }
 
-/* --- SECCIÓN FORO (Auto-Marquee) --- */
 .forum-container {
   background-color: #1a1a2e;
   border: 1px solid rgba(163, 137, 244, 0.4);
@@ -296,7 +279,6 @@ h6,
   border: 1px solid var(--soft-violet);
 }
 
-/* --- Páginas de Error e Información --- */
 .about-card,
 .error-card,
 .contact-card,
@@ -314,7 +296,6 @@ h6,
   text-shadow: 0 0 25px rgba(209, 139, 255, 0.6);
 }
 
-/* --- Responsivo --- */
 @media (max-width: 991px) {
   .display-4 {
     font-size: 2.2rem;
@@ -331,4 +312,14 @@ h6,
   .carousel-item img {
     max-height: 280px;
   }
+}
+
+#headerCarousel .carousel-control-prev {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+#headerCarousel .carousel-control-next {
+  justify-content: flex-end;
+  padding-right: 20px;
 }
